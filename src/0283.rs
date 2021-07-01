@@ -14,7 +14,6 @@ impl Solution {
   }
 }
 
-
 fn main() {
   let mut vec: Vec<i32> = vec![0, 1, 2, 3, 0];
   Solution::move_zeroes(&mut vec);

@@ -6,7 +6,7 @@ impl Solution {
     for i in 0..nums.len() {
       let r = target - nums[i];
       if map.contains_key(&r) {
-        return vec![i as i32, *map.get(&r).unwrap() as i32]
+        return vec![i as i32, *map.get(&r).unwrap() as i32];
       } else {
         map.insert(nums[i], i);
       }
@@ -15,7 +15,6 @@ impl Solution {
   }
 }
 
-
 fn main() {
-  assert_eq!(Solution::two_sum(vec![2,7,11,15], 9), vec![1, 0])
+  assert_eq!(Solution::two_sum(vec![2, 7, 11, 15], 9), vec![1, 0])
 }
